@@ -4912,9 +4912,9 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vktjs-ecc@^4.0.1:
+iotdjs-ecc@^4.0.1:
   version "4.0.4"
-  resolved "https://registry.yarnpkg.com/vktjs-ecc/-/vktjs-ecc-4.0.4.tgz#8c2312df72b98f487883265eb2c5fc5a88e0c0b0"
+  resolved "https://registry.yarnpkg.com/iotdjs-ecc/-/iotdjs-ecc-4.0.4.tgz#8c2312df72b98f487883265eb2c5fc5a88e0c0b0"
   integrity sha512-t8KsZdwwP4b+E3hrFBHMZ7JSuKx/IT5fkK98rbpOhjGzKqsqXSs8IdH73JH2s9RENE6mWGfjU9enELnAt//Giw==
   dependencies:
     bigi "^1.4.2"

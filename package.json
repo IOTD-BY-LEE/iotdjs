@@ -1,5 +1,5 @@
 {
-  "name": "vktjs",
+  "name": "iotdjs",
   "version": "20.0.0-beta3",
   "description": "Talk to IOTD API",
   "main": "dist/index.js",
@@ -20,11 +20,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vankiaio/vktjs.git"
+    "url": "https://github.com/vankiaio/iotdjs.git"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
-    "vktjs-ecc": "^4.0.1",
+    "iotdjs-ecc": "^4.0.1",
     "text-encoding": "^0.6.4"
   },
   "devDependencies": {

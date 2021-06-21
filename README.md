@@ -1,31 +1,31 @@
-vktjs是访问VKT区块链的JavaScript开发包，它通过RPC API访问VKT节点， 同时包含了密钥签名、交易序列化等本地操作。
+iotdjs是访问VKT区块链的JavaScript开发包，它通过RPC API访问VKT节点， 同时包含了密钥签名、交易序列化等本地操作。
 
 ### 安装
 
 使用npm安装nodejs包：
 
-~$ npm install vktjs@beta
+~$ npm install iotdjs@beta
 
-如果要在浏览器里使用vktjs，一种方法是本地构建：
+如果要在浏览器里使用iotdjs，一种方法是本地构建：
 
-~$ git clone https://github.com/vankiaio/vktjs~$  
-cd vktjs  
-~/vktjs$ npm install  
-~/vktjs$ npm run build-web  
+~$ git clone https://github.com/IOTD-BY-VKT/iotdjs.git
+~$ cd iotdjs  
+~/iotdjs$ npm install  
+~/iotdjs$ npm run build-web  
 
-然后在~/vktjs/build-web目录下就可以找到构建好的前端js文件了。
+然后在~/iotdjs/build-web目录下就可以找到构建好的前端js文件了。
 
-### 引入vktjs包
+### 引入iotdjs包
 
-在ES模块中使用import引入vktjs包，例如：
+在ES模块中使用import引入iotdjs包，例如：
 
-import {Api,JsonRpc,RpcError} from 'vktjs';  
-import JsSignatureProviderfrom 'vktjs/dist/vktjs-jssig';// development only  
+import {Api,JsonRpc,RpcError} from 'iotdjs';  
+import JsSignatureProviderfrom 'iotdjs/dist/iotdjs-jssig';// development only  
 
-在nodejs的commonjs模块中，使用require引入vktjs包，例如：  
+在nodejs的commonjs模块中，使用require引入iotdjs包，例如：  
 
-const {Api,JsonRpc,RpcError}=require('vktjs');  
-const JsSignatureProvider=require('vktjs/dist/vktjs-jssig');    // development only  
+const {Api,JsonRpc,RpcError}=require('iotdjs');  
+const JsSignatureProvider=require('iotdjs/dist/iotdjs-jssig');    // development only  
 const fetch =require('node-fetch');                             // node only; not needed in browsers  
 const {TextEncoder,TextDecoder}=require('util');                 // node only; native TextEncoder/Decoder  
 const {TextEncoder,TextDecoder}=require('text-encoding');        // React Native, IE11, and Edge Browsers only  
@@ -35,13 +35,13 @@ const {TextEncoder,TextDecoder}=require('text-encoding');        // React Native
 
 #### 签名提供器
 
-vktjs中的签名提供器负责对交易进行签名。例如：
+iotdjs中的签名提供器负责对交易进行签名。例如：
 
 const defaultPrivateKey ="5JtUScZK2XEp3g9gh7F8bwtPTRAkASmNrrftmx4AxDKD5K4zDnr"; // useraaaaaaaa  
 
 const signatureProvider =newJsSignatureProvider([defaultPrivateKey]);  
 
-> 目前vktjs中包含的JsSignatureProvider在内存中管理私钥，在浏览器里使用 这个签名提供器是不安全的，仅限开发环境使用。
+> 目前iotdjs中包含的JsSignatureProvider在内存中管理私钥，在浏览器里使用 这个签名提供器是不安全的，仅限开发环境使用。
 
 #### JSON-RPC调用
 
@@ -108,7 +108,7 @@ try{const result = await api.transact({...}catch(e){
 
 自动化单元测试：
 
-~/vktjs$ npm run test or yarn test  
+~/iotdjs$ npm run test or yarn test  
 
 web集成测试：
 
