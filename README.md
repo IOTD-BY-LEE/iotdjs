@@ -76,7 +76,7 @@ transact()方法提交一个交易到区块链上，例如：
       }],  
       data:{from:'useraaaaaaaa',  
         to:'useraaaaaaab',  
-        quantity:'0.0001 VKT',  
+        quantity:'0.0001 IOTD',  
         memo:'',  
       },  
     }]  
